@@ -1,0 +1,9 @@
+# 依赖与构建产物（保持首行为注释，避免 BOM 影响首条规则匹配）
+node_modules/
+dist/
+release/
+*.log
+
+# 内部设计文档与本地 IDE 配置（不随开源仓库分发）
+doc/
+.trae/

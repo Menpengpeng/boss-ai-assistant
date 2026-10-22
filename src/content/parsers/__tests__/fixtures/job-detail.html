@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>软件测试高级工程师 - BOSS直聘</title>
+</head>
+<body>
+  <!-- 噪声：广告位（隐藏） -->
+  <div class="header-ad" style="display:none">广告位：限时优惠，非岗位内容</div>
+
+  <!-- 顶部导航（陷阱：a[href*="/gongsi/"] 会误命中此处的「公司」链接） -->
+  <nav class="nav">
+    <a href="https://www.zhipin.com/gongsi/">公司</a>
+  </nav>
+
+  <!-- 职位标题容器（陷阱：class 与公司卡片同名 company-info，内部 .name > .job-title） -->
+  <div class="company-info">
+    <div class="name"><span class="job-title">软件测试高级工程师</span><span class="badge"></span></div>
+  </div>
+
+  <div class="job-detail" data-jobid="BOSSTEST0001">
+    <h1 class="job-name">软件测试高级工程师</h1>
+    <span class="salary">18-35K·14薪</span>
+    <span class="job-area">合肥·高新区</span>
+    <span class="job-experience">5-10年</span>
+    <span class="job-degree">本科</span>
+
+    <!-- 标签区：含重复项与超长噪声文本 -->
+    <div class="job-keyword-list">
+      <li>性能测试</li>
+      <li>自动化测试</li>
+      <li>5-10年</li>
+      <li>性能测试</li>
+      <li>负责核心系统的性能与功能测试方案设计；搭建自动化测试框架并持续优化；参与需求评审推动质量左移这条文本明显超过二十个字用于噪声过滤校验</li>
+    </div>
+
+    <!-- JD 正文：按块级子元素分段 -->
+    <div class="job-sec-text">
+      <p>1、负责核心系统的性能与功能测试方案设计；</p>
+      <p>2、搭建自动化测试框架并持续优化；</p>
+      <p>3、参与需求评审，推动质量左移。</p>
+    </div>
+
+    <div class="job-boss-info">
+      <h2 class="name">王先生</h2>
+      <span class="boss-title">招聘者</span>
+    </div>
+
+    <div class="company-info">
+      <a href="/gongsi/abcd1234.html">合肥中科采象科技</a>
+      <span class="name">合肥中科采象科技</span>
+    </div>
+  </div>
+
+  <!-- 公司介绍区块（真实结构：按 h3 标题定位的兜底路径） -->
+  <div class="job-sec">
+    <h3>公司介绍</h3>
+    <div class="job-sec-text">面向科研与工业场景的数据采集与测试解决方案提供商。</div>
+  </div>
+
+  <!-- 工商信息（真实结构：li.company-name 前有字段名 span） -->
+  <div class="detail-section-item business-info-box">
+    <h3>工商信息</h3>
+    <ul class="level-list">
+      <li class="company-name"><span>公司名称</span>合肥中科采象科技有限公司</li>
+      <li class="company-user"><span>法定代表人</span>张三</li>
+      <li class="company-fund"><span>注册资金</span>1000万元</li>
+    </ul>
+  </div>
+
+  <!-- 右侧公司基本信息卡片（真实结构：ka 属性 + 图标 p） -->
+  <div class="sider-company">
+    <p class="title">公司基本信息</p>
+    <div class="company-info">
+      <a ka="job-detail-company-logo_custompage" href="/gongsi/abcd1234.html" title="合肥中科采象科技"><img src="logo.png" alt=""></a>
+      <a ka="job-detail-company_custompage" href="/gongsi/abcd1234.html" title="合肥中科采象科技">合肥中科采象科技</a>
+    </div>
+    <p><i class="icon-scale"></i>100-499人</p>
+    <p><i class="icon-industry"></i><a ka="job-detail-brandindustry" href="/i102313/">企业服务/数据采集</a></p>
+  </div>
+
+  <!-- 相似职位推荐（陷阱：company-name span 是别家公司名） -->
+  <div class="similar-job-wrapper">
+    <ul class="similar-job-list">
+      <li>
+        <a href="/job_detail/other.html"></a>
+        <span class="company-name">阳光电源股份有限公司</span>
+        <p class="similar-job-attr">20-40K</p>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 噪声：无关推荐区 -->
+  <div class="recommend-list"><div class="recommend-item">推荐岗位</div></div>
+</body>
+</html>

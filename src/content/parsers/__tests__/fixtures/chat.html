@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>沟通中 - BOSS直聘</title>
+</head>
+<body>
+  <div class="chat-header">
+    <div class="chat-title"><span class="name">王先生</span></div>
+    <div class="chat-position">软件测试高级工程师</div>
+  </div>
+
+  <!-- 真实结构：消息条目为 .chat-record 下的 .message-item，我方消息带 .item-myself -->
+  <div class="chat-record">
+    <div class="message-item">
+      <span class="avatar avatar-hr"></span>
+      <div class="item-time"><span class="time">09:12</span></div>
+      <div class="message-content"><p class="text">您好，看到您的简历，方便聊聊吗？</p></div>
+    </div>
+    <div class="message-item item-myself">
+      <span class="avatar avatar-self"></span>
+      <div class="item-time"><span class="time">09:15</span></div>
+      <div class="message-content"><p class="text">您好，方便了解下团队目前的测试体系吗？</p></div>
+    </div>
+    <div class="message-item">
+      <div class="item-time"><span class="time">09:18</span></div>
+      <div class="message-content"><p class="text">我们主要做自动化测试框架建设，最近在看性能压测。</p></div>
+    </div>
+    <div class="message-item item-myself">
+      <div class="message-content"><p class="text">好的，我有自动化框架搭建经验。</p></div>
+    </div>
+    <!-- 噪声：空文本消息应被丢弃 -->
+    <div class="message-item"><div class="message-content"><p class="text"></p></div></div>
+    <!-- 噪声：广告位 -->
+    <div class="ad-slot">广告：提升测试效率</div>
+  </div>
+
+  <!-- 真实结构：输入区容器的 class 含 chat-message（回归陷阱：不得被当作消息条目） -->
+  <div class="bosschat-chat-input chat-message">
+    <textarea placeholder="请输入消息"></textarea>
+    <button class="btn btn-send">发送</button>
+  </div>
+</body>
+</html>
