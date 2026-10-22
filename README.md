@@ -11,6 +11,20 @@
 - **沟通助手**：聊天记录快评、回复建议与风险信号识别
 - **岗位对比**：多岗位横向对比薪资、匹配度与风险
 
+## 功能截图
+
+| 岗位分析 | 简历匹配度 |
+|---|---|
+| ![岗位分析](screenshots/01-job-analysis.png) | ![简历匹配度](screenshots/02-match.png) |
+
+| 列表页 AI 快评 | 沟通助手 |
+|---|---|
+| ![列表页 AI 快评](screenshots/03-list-quick-review.png) | ![沟通助手](screenshots/04-chat-assistant.png) |
+
+![API 配置页](screenshots/05-options-api.png)
+
+*截图为扩展真实运行界面（1280×800），页面部分为演示数据。*
+
 ## 隐私与权限
 
 - 数据仅存本地（`chrome.storage`），无自建后端，不上传任何用户数据
